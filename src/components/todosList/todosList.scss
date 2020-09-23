@@ -1,0 +1,58 @@
+.todosList_container {
+	background: linear-gradient(
+		180deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(4, 30, 113, 0.8407738095238095) 0%,
+		rgba(12, 184, 219, 1) 100%
+	);
+	width: 32%;
+	height: 100%;
+	border-radius: 8px;
+	position: relative;
+	.add {
+		display: flex;
+		justify-content: center;
+		background: #275193;
+		.add_button {
+			background: none;
+			border: none;
+			color: white;
+			font-size: 2rem;
+			text-align: center;
+			padding: 14px;
+		}
+	}
+	.signOut {
+		position: absolute;
+		top: 93%;
+		left: 50%;
+		transform: translateX(-50%);
+		.signOut_button {
+			background: transparent;
+			border: none;
+			color: white;
+			font-size: 2rem;
+			outline: none;
+		}
+	}
+	ul {
+		padding-left: 0;
+		margin: 0;
+		li {
+			list-style: none;
+			font-size: 1.2em;
+			color: white;
+			display: flex;
+			justify-content: flex-start;
+			padding: center;
+			padding: 14px 14px;
+			align-items: center;
+			&:first-child {
+				border-top: 1px solid #ada5a545;
+				border-bottom: none;
+			}
+			border-bottom: 1px solid #ada5a545;
+			border-top: 1px solid #ada5a545;
+		}
+	}
+}

@@ -1,9 +1,12 @@
 import React from "react";
+import { TodosList } from "../index";
 import "./dashboard.scss";
 const Dashboard = () => {
 	return (
 		<main className="dashboard-container">
-			<div className="dashboard"></div>
+			<div className="dashboard">
+				<TodosList />
+			</div>
 		</main>
 	);
 };
