@@ -1,0 +1,15 @@
+.dashboard-container {
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 100vh;
+	.dashboard {
+		background: #f5f5ff;
+		width: 70%;
+		min-height: 54%;
+		border-radius: 8px;
+		box-shadow: 0 0 3px #b9b9b9;
+	}
+}

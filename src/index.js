@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
-import { SignUp, SignIn } from "./components/index";
+import { SignUp, SignIn, Dashboard } from "./components/index";
 
 import "./index.css";
 import App from "./App";
@@ -12,6 +12,7 @@ ReactDOM.render(
 			<Route path="/" component={App} />
 			<Route path="/signup" component={SignUp} />
 			<Route path="/signin" component={SignIn} />
+			<Route path="/dashboard" component={Dashboard} />
 		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById("root")
