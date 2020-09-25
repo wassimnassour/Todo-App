@@ -6,10 +6,11 @@
 	height: 100vh;
 	.dashboard {
 		background: #f5f5ff;
-		width: 70%;
+		width: 65%;
 		min-height: 54%;
 		border-radius: 8px;
 		box-shadow: 0 0 3px #b9b9b9;
 		height: 66%;
+		display: flex;
 	}
 }

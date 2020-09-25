@@ -12,7 +12,7 @@
 	.add {
 		display: flex;
 		justify-content: center;
-		background: #275193;
+		padding: 38px;
 		.add_button {
 			background: none;
 			border: none;
@@ -20,6 +20,7 @@
 			font-size: 2rem;
 			text-align: center;
 			padding: 14px;
+			outline: none;
 		}
 	}
 	.signOut {
@@ -44,7 +45,7 @@
 			color: white;
 			display: flex;
 			justify-content: flex-start;
-			padding: center;
+			align-items: center;
 			padding: 14px 14px;
 			align-items: center;
 			&:first-child {
