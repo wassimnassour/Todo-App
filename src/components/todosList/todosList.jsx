@@ -6,7 +6,7 @@ import { FaSignOutAlt } from "react-icons/fa";
 import { auth } from "../../firebase/firebase";
 
 import "./todosList.scss";
-const TodosList = () => {
+const TodosList = ({ query, setSelectedTodo }) => {
 	return (
 		<section className="todosList_container">
 			<div className="add">
@@ -15,11 +15,21 @@ const TodosList = () => {
 				</button>
 			</div>
 			<ul>
-				<li>
-					<BsList />
-					<span>Todo</span>
-				</li>
+				{query
+					? query.map((el, _index) => {
+							return (
+								<li
+									key={_index}
+									onClick={() => setSelectedTodo(_index)}
+								>
+									<BsList />
+									{el.name}
+								</li>
+							);
+					  })
+					: null}
 			</ul>
+
 			<div className="signOut">
 				<button
 					className="signOut_button"
