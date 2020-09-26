@@ -12,6 +12,33 @@
 		justify-content: center;
 		align-items: center;
 		font-size: 26px;
+		padding: 5px;
+		.addNewTask {
+			width: 60%;
+			display: flex;
+			border: 1px solid #c3c1c1;
+			border-radius: 5px;
+			input {
+				width: 91%;
+				outline: none;
+				background: transparent;
+				padding: 10px;
+				font-weight: bold;
+				outline: none;
+				border: none;
+			}
+			button {
+				background: transparent;
+				font-weight: bold;
+				border: none;
+				font-size: 18px;
+				outline: none;
+				width: 9%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 	}
 	.todo {
 		width: 76%;
@@ -19,12 +46,14 @@
 		border: 1px solid #cccccc;
 		padding: 10px;
 		border-radius: 4px;
+		margin: 5px 0;
 		input {
 			width: 94%;
 			border: none;
 			background: transparent;
 			outline: none;
 			font-size: 17px;
+			margin-top: 8px;
 		}
 		button {
 			border: none;

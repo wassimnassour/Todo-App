@@ -13,11 +13,13 @@ const Dashboard = () => {
 				setUserid(user.uid);
 				const userRef = db.collection("todos").doc(user.uid);
 
-				userRef.get().then((docSnapshot) => {
+				userRef.get().then(async (docSnapshot) => {
 					if (docSnapshot.exists) {
 						userRef.onSnapshot((_doc) => {
 							setQuery(_doc.data().data);
 						});
+					} else {
+						await db.collection("todos").doc(user.uid).set({});
 					}
 				});
 			}
@@ -27,7 +29,12 @@ const Dashboard = () => {
 	return (
 		<main className="dashboard-container">
 			<div className="dashboard">
-				<TodosList query={query} setSelectedTodo={setSelectedTodo} />
+				<TodosList
+					query={query}
+					setSelectedTodo={setSelectedTodo}
+					selectedTodo={selectedTodo}
+					userId={userId}
+				/>
 				<TodoView
 					selectedTodo={selectedTodo}
 					query={query}
