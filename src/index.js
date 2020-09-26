@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import { SignUp, SignIn, Dashboard } from "./components/index";
 
-import "./index.css";
+import "./index.scss";
 import App from "./App";
 
 ReactDOM.render(
