@@ -47,6 +47,7 @@ const TodosList = ({ query, setSelectedTodo, selectedTodo, userId }) => {
 						onChange={(e) => SetNewTask(e.target.value)}
 						autoFocus={addNewTask ? true : false}
 						className="focus"
+						placeholder="add your tasks"
 					/>
 					<button onClick={() => setNewTodos(newTask)}>
 						<AiOutlineSend />
